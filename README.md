@@ -40,25 +40,30 @@ The AAA Framework provides a systematic approach to leverage AI throughout the a
 
 ## Core Principles
 
-1.  **Human-AI Collaboration**: Architects provide domain expertise and strategic vision, while AI provides pattern recognition, completeness checking, and alternative perspectives.
-2.  **Documentation-Driven Architecture**: All designs are documented in version-controlled Markdown and Mermaid diagrams, creating a single source of truth that is continuously updated.
-3.  **Infrastructure as Code (IaC) First**: Every architectural design is intended to become a deployable IaC template, ensuring reproducible and version-controlled environments.
-4.  **Iterative Refinement**: Architecture evolves through multiple AI-powered review cycles and continuous feedback, with all decisions documented.
+1. **Human-AI Collaboration**: Architects provide domain expertise and strategic vision, while AI provides pattern recognition, completeness checking, and alternative perspectives.
+2. **Documentation-Driven Architecture**: All designs are documented in version-controlled Markdown and Mermaid diagrams, creating a single source of truth that is continuously updated.
+3. **Infrastructure as Code (IaC) First**: Every architectural design is intended to become a deployable IaC template, ensuring reproducible and version-controlled environments.
+4. **Iterative Refinement**: Architecture evolves through multiple AI-powered review cycles and continuous feedback, with all decisions documented.
 
-## The 7-Step AAA Methodology
+## The AAA Methodology in Steps
 
 AAA follows a systematic process from business problem to production deployment.
 
 ```mermaid
 graph TD
-    A[1. Start with Business Problem] --> B[2. Build Documentation]
-    B --> C[3. Transform to Infrastructure as Code]
-    C --> D[4. Automate Deployment]
-    D --> E[5. Deploy]
-    E --> F[6. Test]
-    F --> G[7. Move to Production]
-    G --> H[Continuous Monitoring]
-    H --> A
+    A[Start with Business Need] --> B[Create Git Repository to Store Documentation and Code]
+    B --> C[Document Business Need Clearly in Markdown]
+    C --> D[Discuss & Confirm Business Need Documentation with The Business Team]
+    D --> E[Document Solution Architecture Clearly in Markdown and Mermaid Diagrams in Collaboration with AI]
+    E --> F[Discuss & Confirm Solution Architecture Documentation with The Technical Team]
+    F --> G[Transform Architecture Documentation to Infrastructure as Code]
+    G --> H[Automate Deployment using an Automation Service]
+    H --> I[Deploy Solution to Dev/Test Environment]
+    I --> J[Test & Confirm Business need is Covered]
+    J --> K[Move Code to Production Repo]
+    K --> L[Deploy Solution to Production Environment]
+    L --> M[Continuous Monitoring]
+    M --> A
 ```
 
 ## Getting Started
@@ -103,4 +108,4 @@ Please read our `CONTRIBUTING.md` file for more details on our code of conduct a
 
 ## License
 
-This project is licensed under the MIT License - see the https://www.google.com/search?q=LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
