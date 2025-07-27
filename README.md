@@ -2,10 +2,14 @@
 
 **Better Architecture, Faster**
 
-[](https://www.google.com/search?q=https://github.com/neverarchitectalone/framework)
-[](https://neverarchitectalone.com/docs)
-[](https://www.google.com/search?q=LICENSE)
-[](https://github.com/neverarchitectalone)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Framework Status](https://img.shields.io/badge/Framework-Development%20Ready-blue.svg)](https://github.com/neverarchitectalone/framework)
+[![Documentation](https://img.shields.io/badge/docs-neverarchitectalone.com-brightgreen.svg)](https://neverarchitectalone.com/docs)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub stars](https://img.shields.io/github/stars/neverarchitectalone/framework?style=social)](https://github.com/neverarchitectalone/framework)
+[![GitHub forks](https://img.shields.io/github/forks/neverarchitectalone/framework?style=social)](https://github.com/neverarchitectalone/framework)
+[![GitHub issues](https://img.shields.io/github/issues/neverarchitectalone/framework)](https://github.com/neverarchitectalone/framework/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/neverarchitectalone/framework)](https://github.com/neverarchitectalone/framework/pulls)
 
 Welcome to the official repository for the **AI Aided Architecture (AAA) Framework**. This project provides a methodology for designing and building robust cloud architectures by transforming AI tools into collaborative partners.
 
