@@ -95,7 +95,7 @@ The AAA methodology includes multiple cost validation checkpoints:
 
 2. **Step I - Infrastructure Costs Against Budget**:
    - Generate detailed cost estimates from IaC templates
-   - Use cloudprovider cost calculators and sizing tools
+   - Use cloud provider cost calculators and sizing tools
    - Account for operational costs (monitoring, support, maintenance)
    - Plan for scaling scenarios and future growth
 
