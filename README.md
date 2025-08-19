@@ -51,21 +51,23 @@ AAA follows a systematic process from business problem to production deployment,
 
 ```mermaid
 graph TD
-    A[Start with Business Need] --> B[Create Git Repository to Store Documentation and Code]
-    B --> C[Document Business Need Clearly in Markdown]
+    A[Start with Business Need + Budget] --> B[Create Git Repository to Store Documentation and Code]
+    B --> C[Document Business Need and Budget Clearly in Markdown]
     C --> D[Discuss & Confirm Business Need Documentation with The Business Team]
     D --> E[Document Solution Architecture Clearly in Markdown and Mermaid Diagrams in Collaboration with AI]
     E --> F[Verify Business Budget and Solution Cost Alignment]
     F --> G[Discuss & Confirm Solution Architecture Documentation with The Technical Team]
     G --> H[Transform Architecture Documentation to Infrastructure as Code]
     H --> I[Validate Infrastructure Costs Against Budget]
-    I --> J[Automate Deployment using an Automation Service]
-    J --> K[Deploy Solution to Dev/Test Environment]
+    I --> J[Automate Deployment Pipeline with Environment-Specific Controls]
+    J --> K[Deploy to Dev Environment - Direct Deployment]
     K --> L[Test & Confirm Business need is Covered]
-    L --> M[Move Code to Production Repo]
-    M --> N[Deploy Solution to Production Environment]
-    N --> O[Continuous Monitoring with Cost Tracking]
-    O --> A
+    L --> M[Code Review & Second Authorization for Staging]
+    M --> N[Deploy to Staging Environment]
+    N --> P[Final Testing & Third Authorization for Production]
+    P --> Q[Deploy to Production Environment]
+    Q --> R[Continuous Monitoring with Cost Tracking]
+    R --> A
 ```
 
 ## Budget and Cost Management in AAA
