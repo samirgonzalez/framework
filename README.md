@@ -47,7 +47,7 @@ The AAA Framework provides a systematic approach to leverage AI throughout the a
 
 ## The AAA Methodology in Steps
 
-AAA follows a systematic process from business problem to production deployment.
+AAA follows a systematic process from business problem to production deployment, with integrated budget and cost management throughout the architecture lifecycle.
 
 ```mermaid
 graph TD
@@ -55,16 +55,62 @@ graph TD
     B --> C[Document Business Need Clearly in Markdown]
     C --> D[Discuss & Confirm Business Need Documentation with The Business Team]
     D --> E[Document Solution Architecture Clearly in Markdown and Mermaid Diagrams in Collaboration with AI]
-    E --> F[Discuss & Confirm Solution Architecture Documentation with The Technical Team]
-    F --> G[Transform Architecture Documentation to Infrastructure as Code]
-    G --> H[Automate Deployment using an Automation Service]
-    H --> I[Deploy Solution to Dev/Test Environment]
-    I --> J[Test & Confirm Business need is Covered]
-    J --> K[Move Code to Production Repo]
-    K --> L[Deploy Solution to Production Environment]
-    L --> M[Continuous Monitoring]
-    M --> A
+    E --> F[Verify Business Budget and Solution Cost Alignment]
+    F --> G[Discuss & Confirm Solution Architecture Documentation with The Technical Team]
+    G --> H[Transform Architecture Documentation to Infrastructure as Code]
+    H --> I[Validate Infrastructure Costs Against Budget]
+    I --> J[Automate Deployment using an Automation Service]
+    J --> K[Deploy Solution to Dev/Test Environment]
+    K --> L[Test & Confirm Business need is Covered]
+    L --> M[Move Code to Production Repo]
+    M --> N[Deploy Solution to Production Environment]
+    N --> O[Continuous Monitoring with Cost Tracking]
+    O --> A
 ```
+
+## Budget and Cost Management in AAA
+
+The AAA Framework integrates financial planning and cost optimization as core architectural concerns, not afterthoughts. This approach ensures solutions remain viable throughout their lifecycle.
+
+### Business Need and Budget Alignment
+
+Every architecture project starts with understanding the business need and its financial constraints:
+
+- **Budget Definition**: Clearly define initial budget, ongoing operational costs, and acceptable ROI timeframes
+- **Cost-Benefit Analysis**: Document expected business value and quantify it against projected costs
+- **Risk Assessment**: Identify financial risks including cost overruns, scaling expenses, and technical debt
+- **Success Metrics**: Establish measurable criteria that justify the investment
+
+### Cost Verification Points
+
+The AAA methodology includes multiple cost validation checkpoints:
+
+1. **Step F - Business Budget and Solution Cost Alignment**: 
+   - Compare initial architecture estimates against business budget
+   - Identify cost-optimization opportunities early in design
+   - Validate that the solution scope matches available funding
+   - Document budget assumptions and constraints
+
+2. **Step I - Infrastructure Costs Against Budget**:
+   - Generate detailed cost estimates from IaC templates
+   - Use cloud provider cost calculators and sizing tools
+   - Account for operational costs (monitoring, support, maintenance)
+   - Plan for scaling scenarios and future growth
+
+3. **Step O - Continuous Cost Monitoring**:
+   - Implement automated cost tracking and alerting
+   - Regular budget vs. actual cost reporting
+   - Cost optimization recommendations and implementation
+   - Capacity planning based on usage patterns
+
+### AI-Assisted Cost Optimization
+
+Leverage AI tools to enhance cost management:
+
+- **Cost Estimation**: Use AI to analyze similar architectures and predict costs
+- **Resource Optimization**: AI-powered recommendations for right-sizing resources
+- **Alternative Solutions**: Explore cost-effective architectural alternatives
+- **Vendor Comparison**: Analyze different cloud providers and service options
 
 ## Getting Started
 

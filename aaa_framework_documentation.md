@@ -133,6 +133,8 @@ Every AAA implementation **MUST** include these validation steps:
 - [ ] Verify all cloud service names exist and are spelled correctly
 - [ ] Check service availability in target regions
 - [ ] Validate current pricing against official pricing calculators
+- [ ] Verify business budget constraints are respected in solution design
+- [ ] Confirm total solution cost falls within approved budget limits
 - [ ] Confirm API versions and syntax against official documentation
 - [ ] Test all generated code in development environment
 - [ ] Verify security configurations follow current best practices
@@ -241,7 +243,9 @@ official documentation and tested in development before production use.
 **Validation Results**: 
 - ✅ Service tier exists and is correctly named
 - ✅ Pricing verified via Azure calculator
+- ✅ Cost fits within approved project budget
 - ⚠️  Performance specs need to be validated with load testing
+**Budget Impact**: Monthly cost of $X fits within allocated database budget of $Y
 **Decision**: Proceed with recommendation, plan load testing
 ```
 
@@ -807,6 +811,8 @@ git commit -m "infra(terraform): add monitoring resources"
 - [ ] Non-functional requirements specified
 - [ ] Security requirements documented
 - [ ] Performance requirements defined
+- [ ] Business budget constraints documented and validated
+- [ ] Solution cost estimates align with approved budget
 - [ ] Disaster recovery plan created
 
 ### Well-Architected Framework Alignment
@@ -934,6 +940,8 @@ echo "🎉 Architecture validation completed successfully!"
 #### Budget
 - **Development Budget**: [Amount]
 - **Operational Budget**: [Monthly/yearly]
+- **Budget Verification Required**: All solution components must be validated against budget
+- **Cost Monitoring Setup**: Automated budget alerts and cost tracking required
 - **Timeline Constraints**: [Fixed dates/milestones]
 
 #### Technical Constraints
@@ -968,6 +976,9 @@ echo "🎉 Architecture validation completed successfully!"
 1. Are there any common requirements I might have missed?
 2. What are typical challenges for this type of project?
 3. What architectural patterns work best for these requirements?
+4. Does the proposed solution align with the specified budget constraints?
+5. Are there cost optimization opportunities that could reduce solution expenses?
+6. What are the typical cost drivers for this type of architecture?
 
 ### AI Recommendations
 [Document AI feedback on requirements completeness and suggestions]
@@ -1153,6 +1164,18 @@ flowchart LR
 
 ## Cost Considerations
 
+### Business Budget Verification
+- **Budget Constraint Validation**: [Verify solution fits within approved budget]
+- **Cost vs. Budget Comparison**: [Detailed breakdown of estimated vs. allocated costs]
+- **Budget Buffer Analysis**: [Contingency planning for cost overruns]
+- **Approval Gate**: [Budget approval required before implementation]
+
+### Solution Cost Breakdown
+- **Infrastructure Costs**: [Compute, storage, networking costs]
+- **Operational Costs**: [Monitoring, backup, support costs]
+- **Development Costs**: [Implementation and migration costs]
+- **Total Cost of Ownership**: [5-year projected costs]
+
 ### Cost Optimization Strategy
 - **Resource Right-sizing**: [Optimization approach]
 - **Reserved Capacity**: [Long-term cost savings]
@@ -1163,6 +1186,7 @@ flowchart LR
 - **Budget Alerts**: [Cost monitoring setup]
 - **Cost Allocation**: [How costs are tracked]
 - **Regular Reviews**: [Cost review process]
+- **Budget Variance Tracking**: [Monitor actual vs. projected costs]
 
 ## Deployment Architecture
 
@@ -1559,6 +1583,8 @@ When you discover AI has provided incorrect information:
 ## Mandatory Human Review Checkpoints
 - [ ] **Security configurations**: Always reviewed by security expert
 - [ ] **Cost estimates**: Validated with official pricing tools
+- [ ] **Business budget alignment**: Confirmed solution cost fits within budget
+- [ ] **Solution cost breakdown**: Detailed cost analysis reviewed and approved
 - [ ] **Performance assumptions**: Validated with testing or benchmarks
 - [ ] **Deployment procedures**: Tested in non-production environment
 - [ ] **Recovery procedures**: Validated through disaster recovery tests
